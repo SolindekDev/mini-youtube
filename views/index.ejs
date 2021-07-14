@@ -1,0 +1,8 @@
+<a href="http://localhost:3000/sendvideo">Send a video</a>
+
+<ul>
+    <% files.forEach(file => { %>
+        <li><%= file %></li>
+        <a href="http://localhost:3000/video?v=<%= file %>">Watch it!</a>
+    <% }); %>
+</ul>
